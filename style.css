@@ -41,6 +41,7 @@ h2 {
   margin: 20px auto 10px;
   background-image: url(https://img.freepik.com/premium-vector/3d-piggy-bank-with-coin-isolated-white-background_257192-296.jpg?w=2000);
   background-size: contain;
+  background-repeat: no-repeat;
   box-shadow: 0 0 10px black;
 }
 
@@ -64,7 +65,7 @@ button {
 
 #plus,
 #minus {
-  background-color: rgba(255, 255, 255, 0.808);
+  background-color: white;
 }
 
 .buttons button:nth-child(4),
