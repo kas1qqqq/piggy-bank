@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 
 body {
-  background-color: rgb(127, 195, 235);
+  background-color: rgb(101, 167, 206);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,6 +27,8 @@ h2 {
   color: rgb(0, 0, 0);
   font-size: 60px;
   text-transform: uppercase;
+  box-shadow: 0 0 10px black;
+  width: 100%;
 }
 
 .piggy-bank {
@@ -39,13 +41,16 @@ h2 {
   margin: 20px auto 10px;
   background-image: url(https://img.freepik.com/premium-vector/3d-piggy-bank-with-coin-isolated-white-background_257192-296.jpg?w=2000);
   background-size: contain;
+  box-shadow: 0 0 10px black;
 }
 
 button {
   cursor: pointer;
   font-size: 32px;
   padding: 0px 25px !important;
-
+  color: black;
+  border: 3px solid black;
+  box-shadow: 0 0 5px black;
 }
 
 .buttons {
@@ -65,24 +70,27 @@ button {
 .buttons button:nth-child(4),
 .buttons button:nth-child(5),
 .buttons button:nth-child(6) {
-  background-color: lightgreen;
+  background-color: #85bb65;
   padding: 5px 10px;
 }
 
 .buttons button:last-child {
-  background-color: rgb(190, 64, 64);
+  background-color: rgb(207, 73, 73);
   color: white;
+  border: 3px dotted #fad59b;
+  box-shadow: 0 0 5px black;
 }
 
 #getMoney {
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   font-size: 32px;
-  background-color: rgb(159, 255, 103);
+  background-color: #65BB70;
   padding: 10px;
   width: 100%;
   font-weight: bold;
   display: none;
+  box-shadow: 0 0 10px black;
 }
 
 #output {
@@ -93,9 +101,11 @@ button {
 .stockBtn {
   background-color: black;
   color: white;
+  box-shadow: 0 0 5px black;
 }
 
 .greenBtn {
   background-color: black;
   color: lightgreen;
+  box-shadow: 0 0 5px black;
 }
