@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+body {
+  background-color: rgb(127, 195, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.animate__pulse,
+.animate__bounceIn {
+  --animate-duration: 0.3s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.piggy-bank {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: right;
+  margin: 20px auto 10px;
+  background-image: url(https://img.freepik.com/premium-vector/3d-piggy-bank-with-coin-isolated-white-background_257192-296.jpg?w=2000);
+  background-size: contain;
+}
+
+button {
+  cursor: pointer;
+  font-size: 32px;
+  padding: 0px 25px !important;
+
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons button {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#plus,
+#minus {
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+.buttons button:nth-child(4),
+.buttons button:nth-child(5),
+.buttons button:nth-child(6) {
+  background-color: lightgreen;
+  padding: 5px 10px;
+}
+
+.buttons button:last-child {
+  background-color: rgb(190, 64, 64);
+  color: white;
+}
+
+#getMoney {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 32px;
+  background-color: rgb(159, 255, 103);
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  display: none;
+}
+
+#output {
+  border-radius: 0 10px 0 0;
+  padding: 0 10px;
+}
+
+.stockBtn {
+  background-color: black;
+  color: white;
+}
+
+.greenBtn {
+  background-color: black;
+  color: lightgreen;
+}
