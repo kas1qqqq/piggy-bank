@@ -11,10 +11,11 @@ let output = document.querySelector('#output')
 let plus = document.querySelector('#plus')
 let five = document.querySelector('#five')
 let ten = document.querySelector('#ten')
-let fiveteen = document.querySelector('#fiveteen')
+let fifteen = document.querySelector('#fifteen')
 let crack = document.querySelector('#crack')
 let getMoney = document.querySelector('#getMoney')
 let piggy = document.querySelector('.piggy-bank')
+
 plus.onclick = () => {
   output.innerHTML = `${myPiggy.addMoney(1)} ${'$'}`
   getMoney.style.display = 'none'
@@ -29,6 +30,7 @@ plus.onclick = () => {
     output.classList.remove('animate__animated', 'animate__bounceIn')
   })
 }
+
 minus.onclick = () => {
   output.innerHTML = `${myPiggy.addMoney(-1)} ${'$'}`
   getMoney.style.display = 'none'
@@ -43,6 +45,7 @@ minus.onclick = () => {
     output.classList.remove('animate__animated', 'animate__bounceIn')
   })
 }
+
 five.onclick = () => {
   output.innerHTML = `${myPiggy.addMoney(5)} ${'$'}`
   getMoney.style.display = 'none'
@@ -56,6 +59,7 @@ five.onclick = () => {
     output.classList.remove('animate__animated', 'animate__bounceIn')
   })
 }
+
 ten.onclick = () => {
   output.innerHTML = `${myPiggy.addMoney(10)} ${'$'}`
   getMoney.style.display = 'none'
@@ -69,19 +73,21 @@ ten.onclick = () => {
     output.classList.remove('animate__animated', 'animate__bounceIn')
   })
 }
-fiveteen.onclick = () => {
+
+fifteen.onclick = () => {
   output.innerHTML = `${myPiggy.addMoney(15)} ${'$'}`
   getMoney.style.display = 'none'
   output.classList.add('greenBtn')
-  fiveteen.classList.add('animate__animated', 'animate__pulse')
-  fiveteen.addEventListener('animationend', () => {
-    fiveteen.classList.remove('animate__animated', 'animate__pulse')
+  fifteen.classList.add('animate__animated', 'animate__pulse')
+  fifteen.addEventListener('animationend', () => {
+    fifteen.classList.remove('animate__animated', 'animate__pulse')
   })
   output.classList.add('animate__animated', 'animate__bounceIn')
   output.addEventListener('animationend', () => {
     output.classList.remove('animate__animated', 'animate__bounceIn')
   })
 }
+
 crack.onclick = () => {
   getMoney.style.display = 'block'
   getMoney.innerHTML = `${'You get:'} ${myPiggy.value} ${'$'}`

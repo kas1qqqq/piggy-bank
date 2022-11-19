@@ -22,18 +22,14 @@ body {
   font-family: 'Mouse Memoirs', sans-serif;
 }
 
-h2 {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-size: 60px;
+h1 {
   text-transform: uppercase;
-  box-shadow: 0 0 10px black;
-  width: 100%;
+  font-size: 40px;
 }
 
 .piggy-bank {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 10px;
   font-size: 32px;
   font-weight: bold;
@@ -47,10 +43,8 @@ h2 {
 
 button {
   cursor: pointer;
-  font-size: 32px;
+  font-size: 28px;
   padding: 0px 25px !important;
-  color: black;
-  border: 3px solid black;
   box-shadow: 0 0 5px black;
 }
 
@@ -65,21 +59,19 @@ button {
 
 #plus,
 #minus {
-  background-color: white;
+  background-color: rgba(249, 207, 139, 0.8);
 }
 
 .buttons button:nth-child(4),
 .buttons button:nth-child(5),
 .buttons button:nth-child(6) {
   background-color: #85bb65;
-  padding: 5px 10px;
 }
 
 .buttons button:last-child {
-  background-color: rgb(207, 73, 73);
+  background-color: rgb(221, 79, 79, 0.9);
   color: white;
-  border: 3px dotted #fad59b;
-  box-shadow: 0 0 5px black;
+  border: 3px dotted #fed08c;
 }
 
 #getMoney {
@@ -87,8 +79,8 @@ button {
   text-align: center;
   font-size: 32px;
   background-color: #65BB70;
-  padding: 10px;
-  width: 100%;
+  padding: 5px 0;
+  width: 80%;
   font-weight: bold;
   display: none;
   box-shadow: 0 0 10px black;
@@ -96,7 +88,7 @@ button {
 
 #output {
   border-radius: 0 10px 0 0;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .stockBtn {
